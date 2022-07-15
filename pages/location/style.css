@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Slab&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav{
+    background-color: white;
+    padding: .5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: solid 1px rgb(222, 223, 205);
+}
+
+ul{
+    list-style-type:none
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 0;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 0;
+}
+
+button{
+    padding: .8rem 2rem;
+    border: none;
+    background-color: white;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 1px transparent;
+    transition: background-color 400ms ease;
+}
+
+button:hover {
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+}
+
+.container__wide {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.container__slim {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 8rem;
+}
+.nav__link__container {
+    display: flex;
+}
+
+.nav__link{
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: color 400ms ease;
+}
+.nav__link:hover{
+    color: rgb(119, 218, 209);
+}
+
+.hero {
+    margin-top: 7rem;
+    background-image: url(../../images/Hero-secondary.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    padding: 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    border-radius: 20px;
+}
+
+.location__container{
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.location__text{
+    margin: 0 auto;
+    width: 50%;
+}
+
+/*---Footer----*/
+
+footer{
+    background-color: rgb(187, 189, 207);
+    margin: 0;
+    padding: 6rem 0;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__link {
+    color: black;
+    text-decoration: none;
+    font-size: .85rem;
+}
+
+.social__container{
+    display: flex;
+}
+.social__icon {
+    height: 1.5rem;
+}
+
+.mr__2{
+    margin-right: 1rem;
+}
