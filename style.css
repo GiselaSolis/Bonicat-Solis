@@ -21,6 +21,7 @@ nav{
     width: 100%;
     top: 0;
     border-bottom: solid 1px rgb(222, 223, 205);
+    z-index: 9999;
 }
 
 ul{
@@ -87,6 +88,15 @@ button:hover {
     body{
         font-size: 14px;
     }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -151,8 +161,8 @@ button:hover {
 }
 
 .hero__content{
-    width: 30%;
-    padding: 0 8rem;
+    width: 60%;
+    padding: 0 4rem;
 }
 
 .home__about{
@@ -218,7 +228,7 @@ button:hover {
     font-size: .85rem;
 }
 .card{
-    width: 22%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,7 +323,7 @@ button:hover {
 
 .hero {
     margin-top: 7rem;
-    background-image: url(../../images/Hero-secondary.jpg);
+    background-image: url(./images/Hero-secondary.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -427,7 +437,7 @@ textarea{
     border: 1px solid black;
     border-radius: 20px;
     padding: .5rem 1.5rem;
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -530,7 +540,7 @@ textarea::placeholder{
             'item6 item7';
     }
     .item3{
-        max-height: 15rem;
+            max-height: 15rem;
     }
 }
 
