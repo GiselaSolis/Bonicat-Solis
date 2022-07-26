@@ -81,25 +81,6 @@ button:hover {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .container__slim {
-        width: 90%;
-    }
-    body{
-        font-size: 14px;
-    }
-    h1 {
-        font-size: 3.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1.5rem;
-    }
-}
-
-
 /* ---- NAVBAR ----*/
 
 .nav__wrapper {
@@ -129,21 +110,6 @@ button:hover {
 .nav__link:hover{
     color: rgb(119, 218, 209);
 }
-
-@media only screen and (max-width: 768px) {
-    .nav__link__container{
-        display: none;
-    }
-    #logo{
-        width: 5rem;
-    }
-    .nav__menu{
-        display: block;
-        width: 1.5rem;
-        cursor: pointer;
-    }
-}
-
 
 /* ---- STARTS HOME ----*/
 
@@ -270,51 +236,6 @@ button:hover {
     background-image: url(./images/mkt.png);
 }
 
-@media only screen and (max-width: 768px) {
-    .hero__home{
-        padding: 4rem 0;
-        margin-top: 3rem;
-        text-align: center;
-    }
-    .hero__content{
-        width: 100%;
-        padding: 0 2rem;
-    }
-    .home__about{
-        flex-wrap: wrap;
-        text-align: center;
-        width: 100%;
-        padding: 4rem 0;
-    }
-    .home__about__image{
-        width: 15rem;
-        height: 15rem;
-        min-width: auto;
-        margin-right: 0;
-    }
-    .home__about__content{
-        justify-content: center;
-        align-items: center;
-    }
-    .image__banner {
-        height: 50vh;
-    }
-    .card__section{
-        padding: 4rem 0;
-    }
-    .card__title__container{
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    .card__container {
-        flex-wrap: wrap;
-    }
-    .card {
-        width: 100%;
-        margin-bottom: 2rem;
-        padding: 2rem;
-    }
-}
 
 /* ---- ENDS HOME ----*/
 
@@ -393,17 +314,12 @@ button:hover {
     width: 40%;
 }
 
-.mb-4 {
-    margin-bottom: 2rem;
+.about__social__container{
+    display: flex;
 }
 
-@media only screen and (max-width: 768px) {
-    .hero{
-        margin-top: 4rem;
-        padding: 4rem 0;
-    }
-    
-
+.mb-4 {
+    margin-bottom: 2rem;
 }
 
 /* ----END OF ABOUT----*/
@@ -446,6 +362,7 @@ textarea::placeholder{
     opacity: 100;
 }
 
+
 /* ----ENDS CONTACT---- */
 
 
@@ -455,11 +372,15 @@ textarea::placeholder{
     text-align: center;
     padding: 6rem 0;
 }
+.location__container img {
+    max-width: 100%;
+}
 
 .location__text{
     margin: 0 auto;
     width: 50%;
 }
+
 
 /* ----ENDS LOCATION---- */
 
@@ -528,21 +449,6 @@ textarea::placeholder{
     border-top: 1px solid black;
 }
 
-@media only screen and (max-width: 768px){
-    .store{
-        padding: 4rem 0;
-    }
-    .store__container{
-        grid-template-areas:
-            'item1 item2'
-            'item3 item4'
-            'item5 item5'
-            'item6 item7';
-    }
-    .item3{
-            max-height: 15rem;
-    }
-}
 
 /* ---- ENDS STORE ---- */
 
@@ -585,7 +491,162 @@ footer{
     margin-right: 1rem;
 }
 
+/* ---- ENDS FOOTER---- */
+
+
+
+/* ---- MEDIA QUERY ---- */
+
 @media only screen and (max-width: 768px) {
+
+    /* --- main --- */
+
+    .container__slim {
+        width: 90%;
+    }
+    body{
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* --- navbar --- */
+
+    .nav__link__container{
+        display: none;
+    }
+    #logo{
+        width: 5rem;
+    }
+    .nav__menu{
+        display: block;
+        width: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* --- home --- */
+
+    .hero__home{
+        padding: 4rem 0;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .hero__content{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .home__about{
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        padding: 4rem 0;
+    }
+    .home__about__image{
+        width: 15rem;
+        height: 15rem;
+        min-width: auto;
+        margin-right: 0;
+    }
+    .home__about__content{
+        justify-content: center;
+        align-items: center;
+    }
+    .image__banner {
+        height: 50vh;
+    }
+    .card__section{
+        padding: 4rem 0;
+    }
+    .card__title__container{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .card__container {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+    /* --- about --- */
+
+    .hero{
+        margin-top: 4rem;
+        padding: 4rem 0;
+    }
+    .about__info {
+        padding: 4rem 0;
+        display: block;
+        text-align: center;
+    }
+    .about__image{
+        width: 100%;
+    }
+    .about__content{
+        width: 100%;
+        align-items: center;
+    }
+    .text_giant{
+        font-size: 2.5rem;
+    }
+    .founder {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 4rem 0;
+    }
+    .founder__image{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .founder__text{
+        width: 100%;
+    }
+    .about__social__container{
+        justify-content: center;
+    }
+
+    /* --- contact --- */
+
+    .form{
+        width: 90%;
+    }
+
+    /* --- location --- */
+
+    .location__container {
+        padding: 4rem 0;
+    }
+    .location__text {
+        width: 100%;
+    }
+
+    /* --- store --- */
+
+    .store{
+        padding: 4rem 0;
+    }
+    .store__container{
+        grid-template-areas:
+            'item1 item2'
+            'item3 item4'
+            'item5 item5'
+            'item6 item7';
+    }
+    .item3{
+            max-height: 15rem;
+    }
+
+    /* --- footer --- */
+
     footer{
         padding: 4rem 0;
     }
@@ -602,4 +663,4 @@ footer{
     }
 }
 
-/* ---- ENDS FOOTER---- */
+/* ---- ENDS MEDIA QUERY ---- */
