@@ -4,40 +4,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
 	<title>Bonicat</title>
 </head>
 <body>
 
 	<header>
-		<nav>
-            <div class="container__wide nav__wrapper">
-                <a href="index.html"><img src="./assets/Bonicat_logo.png" id="logo"></a>
-                <img src="./assets/menu.png" alt="nav menu" class="nav__menu">
-                <ul class="nav__link__container">
-                    <li><a class="nav__link" href="./pages/about.html">ABOUT</a></li>
-                    <li><a class="nav__link" href="./pages/store.html">STORE</a></li>
-                    <li><a class="nav__link" href="./pages/location.html">LOCATION</a></li>
-                    <li><a class="nav__link" href="./pages/contact.html">CONTACT</a></li>
-                </ul>
+		<nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a href="index.html" class="navbar-brand">Bonicat</a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/about.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/store.html">STORE</a></li>
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/location.html">LOCATION</a></li>
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
 		</nav>
 	</header>
 
     <main>
-        <section class="container__wide hero__home">
-			<div class="hero__content">
-                <H1 class="mb__4">Creations to cheer up your place</H1>
-                <button>check our products</button>
+        <section class="container-xl ">
+			<div class="bg-image p-5 shadow-1-strong rounded-5 mb-5 text-white d-flex flex-column justify-content-center" style="background-image: url(./images/GREEN_HERO_1728x.jpg); height: 30rem; background-size: cover; background-position: center;">
+                <div class="w-25">
+                    <H1 class="mb-4">Creations to cheer up your place</H1>
+                    <button type="button" class="btn btn-light">Check our products</button>
+                </div>
+
             </div>
 	    </section>
 
-        <section class="container__slim">
-            <div class="home__about">
-                <div class="home__about__image">
-                    <img src="./images/IMG_0150_1_750x.jpg" alt="">
-                </div>
-                <div class="home__about__content">
+        <section class="container-xl mb-5">
+            <div class="d-flex align-items-center justify-content-center">
+                <img class="rounded-circle me-5" style="width: 15rem; height: 15rem; object-fit: cover;" src="./images/IMG_0150_1_750x.jpg" alt="">
+                <div class="w-25 ">
                     <h2>
                         What's cool about us?
                     </h2>
@@ -47,29 +54,30 @@
                 </div>
             </div>
         </section>
+        
 
         <section>
-            <div class="image__banner"></div>
+            <div  style="background-image: url(./images/FACE_bf74165c-a7d8-43d8-a2e0-8f4ee055fb14_300x.png); height: 30rem; background-position: center; background-repeat: no-repeat; background-color: rgb(160, 132, 185);"></div>
         </section>
 
-        <section class="card__section">
-            <div class="container__slim">
-                <h2 class="mb__4">Get to know our process</h2>
-                <div class="card__title__container">
+        <section>
+            <div class="container-xl py-5">
+                <h2 class="text-center mb-4">Get to know our process</h2>
+                <div class="text-center w-50 mx-auto mb-5">
                     <p>Our entire process of creation is soaked with the concept of creating whimsical objects with thoughtful craft.</p>
                 </div>
-                <div class="card__container">
-                    <div class="card card__1">
+                <div class="d-flex justify-content-between">
+                    <div class="w-25 border border-secondary rounded-2 p-5">
                         <div class="card__img card__img__1"></div>
                         <h3>Sketching</h3>
                         <p class="text__small">Sketching helps us think through our ideas and explore them.</p>
                     </div>
-                    <div class="card card__2">
+                    <div class="w-25 border border-secondary rounded-2 p-5">
                         <div class="card__img card__img__2"></div>
                         <h3>Modeling</h3>
                         <p class="text__small">Our modeling proccess is completely handmade and done with a lot of care.</p>
                     </div>
-                    <div class="card card__3">
+                    <div class="w-25 border border-secondary rounded-2 p-5">
                         <div class="card__img card__img__3"></div>
                         <h3>Marketing</h3>
                         <p class="text__small">One of the most importants steps for us is creative product photography.</p>
@@ -80,20 +88,25 @@
         </section>
     </main>
 
-	<footer>
-        <div class="container__wide footer__container">
-            <a href="index.html"><img src="./assets/Bonicat_logo.png" id="logo__footer" class="mb__4"></a>
-            <ul class="footer__navigation mb__4">
-                <li><a class="footer__link" href="./pages/about.html">ABOUT</a></li>
-                <li><a class="footer__link" href="./pages/store.html">STORE</a></li>
-                <li><a class="footer__link" href="./pages/location.html">LOCATION</a></li>
-                <li><a class="footer__link" href="./pages/contact.html">CONTACT</a></li>
+	<footer style="background-color: rgb(160, 132, 185);">
+        <div class="container-xl py-5 d-flex justify-content-between">
+            <a href="index.html"><img src="./assets/Bonicat_logo.png" id="logo__footer" class="mb__4" style="height: 2rem;"></a>
+            <ul class="list-unstyled">
+                <li><a class="list-group-item" href="./pages/about.html">ABOUT</a></li>
+                <li><a class="list-group-item" href="./pages/store.html">STORE</a></li>
+                <li><a class="list-group-item" href="./pages/location.html">LOCATION</a></li>
+                <li><a class="list-group-item" href="./pages/contact.html">CONTACT</a></li>
             </ul>
-            <div class="social__container">
-                <a href="https://www.facebook.com/"><img src="./assets/facebook-f-brands.svg" alt="facebook" class="social__icon mr__2"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/instagram-brands.svg" alt="facebook" class="social__icon"></a>
+            <div class="d-flex">
+                <a href="https://www.facebook.com/"><img src="./assets/facebook-f-brands.svg" alt="facebook" style="height: 1rem;" class="me-2"></a>
+                <a href="https://www.instagram.com/"><img src="./assets/instagram-brands.svg" alt="facebook" style="height: 1rem;"></a>
             </div>
         </div>
 	</footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -4,39 +4,43 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
-    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<title>About</title>
 </head>
 <body>
 
 	<header>
-        <nav>
-            <div class="container__wide nav__wrapper">
-                <a href="./../index.html" id="logo"><img src="./../assets/Bonicat_logo.png" id="logo"></a>
-                <img src="../assets/menu.png" alt="nav menu" class="nav__menu">
-                <ul class="nav__link__container">				
-                    <li><a class="nav__link" href="./about.html">ABOUT</a></li>
-                    <li><a class="nav__link" href="./store.html">STORE</a></li>
-                    <li><a class="nav__link" href="./location.html">LOCATION</a></li>
-                    <li><a class="nav__link" href="./contact.html">CONTACT</a></li>
-                </ul>
+		<nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a href="./../index.html" class="navbar-brand">Bonicat</a>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/about.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/store.html">STORE</a></li>
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/location.html">LOCATION</a></li>
+                        <li class="nav-item"><a class="nav-link px-4" href="./pages/contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+		</nav>
 	</header>
 
     <main>
-        <section class="container__wide hero">
+        <section class="container-xl bg-image p-5 shadow-1-strong rounded-5 mb-5 text-white d-flex flex-column justify-content-center text-center" style="background-image: url(./../images/Hero-secondary.jpg); height: 20rem; background-size: cover; background-position: center;"">
             <H1>ABOUT</H1>
  
         </section>
     
         <section>
-            <div class="container__slim about__info">
-                <div class="about__image">
+            <div class="container-xl">
+                <div class="w-75 mx-auto rounded-5 mb-4" style="overflow: hidden; height: 30rem">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HX09-5TxiRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="about__content">
-                    <h2>
+                <div class="w-50 mx-auto text-center">
+                    <h2 class="mb-2">
                         Heading
                     </h2>
                     <p>
@@ -47,23 +51,21 @@
         </section>
 
         <section>
-            <div class="container__slim banner">
-                <p class="text_giant">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="w-50 mx-auto text-center py-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </section>
 
         <section>
-            <div class="container__slim founder">
-                <div class="founder__image">
-                    <img src="./../images/kamila-maciejewska-EsaQ5OQNszQ-unsplash.jpg" alt="woman smiling">
-                </div>
-                <div class="founder__text">
+            <div class="container-xl d-flex justify-content-between py-5">
+                <img class="rounded-5 me-5 w-75" style=" height: 15rem; object-fit: cover;" src="./../images/kamila-maciejewska-EsaQ5OQNszQ-unsplash.jpg" alt="woman smiling">
+                <div class="mb-5 d-flex flex-column justify-content-center">
                     <h2>The Founder</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <div class="about__social__container">
-                        <a href="https://www.facebook.com/"><img src="./../assets/facebook-f-brands.svg" alt="facebook" class="social__icon mr__2"></a>
-                        <a href="https://www.instagram.com/"><img src="./../assets/instagram-brands.svg" alt="facebook" class="social__icon"></a>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/"><img src="./../assets/facebook-f-brands.svg" alt="facebook" style="height: 1rem;" class="me-2"></a>
+                        <a href="https://www.instagram.com/"><img src="./../assets/instagram-brands.svg" alt="facebook" style="height: 1rem;"></a>
                     </div>
                 </div>
 
@@ -71,20 +73,25 @@
         </section>
     </main>	
 
-	<footer>
-        <div class="container__wide footer__container">
-            <a href="./../index.html"><img src="./../assets/Bonicat_logo.png" id="logo" class="mb__4"></a>
-            <ul class="footer__navigation mb__4">
-                <li><a class="footer__link" href="../pages/about.html">ABOUT</a></li>
-                <li><a class="footer__link" href="../pages/store.html">STORE</a></li>
-                <li><a class="footer__link" href="../pages/location.html">LOCATION</a></li>
-                <li><a class="footer__link" href="../pages/contact.html">CONTACT</a></li>
+    <footer style="background-color: rgb(160, 132, 185);">
+        <div class="container-xl py-5 d-flex justify-content-between">
+            <a href="index.html"><img src="./../assets/Bonicat_logo.png" id="logo__footer" class="mb__4" style="height: 2rem;"></a>
+            <ul class="list-unstyled">
+                <li><a class="list-group-item" href="./pages/about.html">ABOUT</a></li>
+                <li><a class="list-group-item" href="./pages/store.html">STORE</a></li>
+                <li><a class="list-group-item" href="./pages/location.html">LOCATION</a></li>
+                <li><a class="list-group-item" href="./pages/contact.html">CONTACT</a></li>
             </ul>
-            <div class="social__container">
-                <a href="https://www.facebook.com/"><img src="./../assets/facebook-f-brands.svg" alt="facebook" class="social__icon mr__2"></a>
-                <a href="https://www.instagram.com/"><img src="./../assets/instagram-brands.svg" alt="instagram" class="social__icon"></a>
+            <div class="d-flex">
+                <a href="https://www.facebook.com/"><img src="./../assets/facebook-f-brands.svg" alt="facebook" style="height: 1rem;" class="me-2"></a>
+                <a href="https://www.instagram.com/"><img src="./../assets/instagram-brands.svg" alt="facebook" style="height: 1rem;"></a>
             </div>
         </div>
 	</footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
