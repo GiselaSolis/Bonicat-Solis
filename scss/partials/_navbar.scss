@@ -1,0 +1,27 @@
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 8rem;
+}
+
+.nav__menu{
+    display:none;
+}
+
+.nav__link__container {
+    display: flex;
+}
+
+.nav__link{
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: color 400ms ease;
+}
+.nav__link:hover{
+    color: rgb(119, 218, 209);
+}

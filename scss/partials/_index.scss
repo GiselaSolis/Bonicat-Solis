@@ -1,0 +1,124 @@
+.hero__home{
+    margin-top: 7rem;
+    background-image: url(./../images/GREEN_HERO_1728x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    padding: 16rem 0;
+    display: flex;
+    align-items: center;
+    color:white;
+    border-radius: 20px;
+
+    .hero__content{
+        width: 60%;
+        padding: 0 4rem;
+    }
+}
+
+.home__about{
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+
+    .home__about__image{
+        width: 25rem;
+        height: 25rem;
+        min-width: 25rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 4rem;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .home__about__content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+}
+
+.image__banner{
+    background-color: rgb(160, 132, 185);
+    background-image: url(./../images/FACE_bf74165c-a7d8-43d8-a2e0-8f4ee055fb14_300x.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card__section{
+    text-align: center;
+    padding: 8rem 0;
+
+    .card__title__container{
+        margin: 0 auto;
+        width: 30%;
+        margin-bottom: 5rem;
+    }
+    .card__container{
+        display: flex;
+        justify-content: space-between;
+
+        .card{
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 14px;
+            padding: 2.5rem;
+            box-shadow: 4px 6px 19px 0px rgba(0,0,0,0);
+            transition: box-shadow .5s ease;
+    
+            &:hover {
+                box-shadow: 4px 6px 19px 0px rgba(0,0,0,0.2);;
+            }
+            
+            &__img{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-bottom: 1rem;
+                max-width: 100%;
+            }
+        }
+
+        .card__1{
+            background-color: rgb(187, 235, 219);
+    
+            &__img{
+                background-image: url(./../../images/draw.png);
+            }
+        }
+        
+        .card__2 {
+            background-color: rgb(230, 195, 195);
+    
+            &__img{
+                background-image: url(./../../images/process.png);
+            }
+        }
+        
+        .card__3{
+            background-color: rgb(250, 240, 208);
+            &__img {
+                background-image: url(./../../images/mkt.png);
+            }
+        }
+    }
+  
+}
+
+
