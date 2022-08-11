@@ -226,16 +226,16 @@ footer {
         max-width: 100%; }
     .card__section .card__container .card__1 {
       background-color: #bbebdb; }
-      .card__section .card__container .card__1__img {
-        background-image: url(./../../images/draw.png); }
     .card__section .card__container .card__2 {
       background-color: #e6c3c3; }
-      .card__section .card__container .card__2__img {
-        background-image: url(./../../images/process.png); }
     .card__section .card__container .card__3 {
       background-color: #faf0d0; }
-      .card__section .card__container .card__3__img {
-        background-image: url(./../../images/mkt.png); }
+    .card__section .card__container .card__img-1 {
+      background-image: url(./../../images/draw.png); }
+    .card__section .card__container .card__img-2 {
+      background-image: url(./../../images/process.png); }
+    .card__section .card__container .card__img-3 {
+      background-image: url(./../../images/mkt.png); }
 
 @media only screen and (max-width: 768px) {
   /* --- main --- */

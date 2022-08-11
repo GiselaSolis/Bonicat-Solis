@@ -95,28 +95,30 @@
             }
         }
 
-        .card__1{
-            background-color: rgb(187, 235, 219);
-    
-            &__img{
-                background-image: url(./../../images/draw.png);
+        $cardcolor:(
+            1: #bbebdb,
+            2: #e6c3c3,
+            3: #faf0d0
+        );
+        
+        $cardimg:(
+            1: url(./../../images/draw.png),
+            2: url(./../../images/process.png),
+            3: url(./../../images/mkt.png)
+        );
+        
+        @each $card, $color in $cardcolor {
+            .card__#{$card}{
+                background-color: $color;
+            }
+        };
+        
+        @each $img, $url in $cardimg {
+            .card__img-#{$img} {
+                background-image: $url;
             }
         }
         
-        .card__2 {
-            background-color: rgb(230, 195, 195);
-    
-            &__img{
-                background-image: url(./../../images/process.png);
-            }
-        }
-        
-        .card__3{
-            background-color: rgb(250, 240, 208);
-            &__img {
-                background-image: url(./../../images/mkt.png);
-            }
-        }
     }
   
 }
