@@ -96,13 +96,19 @@ button{
     margin-bottom: 2rem;
 }
 
+.text_giant {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .text__small {
     font-size: .85rem;
 }
 
 .hero {
     margin-top: 7rem;
-    background-image: url(./images/Hero-secondary.jpg);
+    background-image: url(./../../images/Hero-secondary.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;

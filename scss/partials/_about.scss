@@ -1,0 +1,61 @@
+.about__info {
+    margin: 0 auto;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+
+    .about__image {
+        width: 65%;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 4rem;
+    }
+    
+    .about__content {
+        width: 30%;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    
+}
+
+
+.banner {
+    text-align: center;
+
+    .banner__text {
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+}
+
+
+.founder {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    &_image {
+        width: 50%;
+        overflow: hidden;
+        border-radius: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        width: 40%;
+    }
+    
+} 
+
+.about__social__container {
+    display: flex;
+}
